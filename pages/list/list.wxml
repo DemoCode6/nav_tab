@@ -1,0 +1,16 @@
+<view class="list_search">
+  <input placeholder="请输入店铺名称"></input>
+  <text class="iconfont icon-search"></text>
+</view>
+
+
+<view>
+  <view wx:for="{{storelist}}" wx:key="item" class="sold_list clear">
+    <view class="sold_list1">{{item.title}}</view>
+    <view class="sold_list2">
+      <view class="sold_list2_titlemain">{{item.title_main}}</view>
+      <view>{{item.sold}}</view>
+    </view>
+  </view>
+  <view class="footer">没有了，亲</view>
+</view>

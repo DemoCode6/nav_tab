@@ -1,0 +1,47 @@
+<view class="autarky_top">
+  <text>最后壹公里自营店</text>
+  <text class="iconfont {{shoucang==true ? 'icon-shoucang' : 'icon-shoucang1'}}" bindtap="shoucang_click"></text>
+</view>
+
+<!-- 搜索框 -->
+<view class="list_search">
+  <input placeholder="请输入商品名称"></input>
+  <text class="iconfont icon-search"></text>
+</view>
+
+<!-- 选项卡 -->
+<view class="nav">
+  <block wx:for="{{titles}}" wx:key="titles">
+    <view class="{{activeindex==index ? 'active':''}}" bindtap="headelcilck" data-index="{{index}}">{{item}}</view>
+  </block>
+</view>
+<!-- 选项卡内容1 -->
+<view class="nav_main" wx:if="{{activeindex==0}}">
+  <view class="nav_main1" wx:for="{{goodslist}}" wx:key="goodslist">
+    <image src="{{item.goods_img}}"></image>
+    <view class="goods_title">{{item.goods_title}}</view>
+    <view class="goods_price">￥{{item.goods_price}}</view>
+    <view class="goods_sold">已售：{{item.goods_sold}}</view>
+  </view>
+  <view class="meiyou">没有了，亲</view>
+</view>
+<!-- 选项卡内容2 -->
+<view class="nav_main" wx:if="{{activeindex==1}}">
+  <view class="nav_main1" wx:for="{{goodslist1}}" wx:key="goodslist1">
+    <image src="{{item.goods_img}}"></image>
+    <view class="goods_title">{{item.goods_title}}</view>
+    <view class="goods_price">￥{{item.goods_price}}</view>
+    <view class="goods_sold">已售：{{item.goods_sold}}</view>
+  </view>
+  <view class="meiyou">没有了，亲</view>
+</view>
+<!-- 选项卡内容3 -->
+<view class="nav_main" wx:if="{{activeindex==2}}">
+  <view class="nav_main1" wx:for="{{goodslist2}}" wx:key="goodslist">
+    <image src="{{item.goods_img}}"></image>
+    <view class="goods_title">{{item.goods_title}}</view>
+    <view class="goods_price">￥{{item.goods_price}}</view>
+    <view class="goods_sold">已售：{{item.goods_sold}}</view>
+  </view>
+  <view class="meiyou">没有了，亲</view>
+</view>

@@ -1,0 +1,65 @@
+@import '/iconfont/iconfont.wxss';
+.clear:after{
+  content: "";
+  clear: both;
+  display:block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.list_search{
+  position: relative;
+}
+.list_search input{
+  border: 1px solid #ccc;
+  width: 90%;
+  border-radius: 30rpx;
+  margin: auto;
+  height: 65rpx;
+  font-size: 28rpx;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+}
+.list_search .icon-search{
+  position: absolute;
+  top: 20rpx;
+  right: 70rpx;
+  font-weight: bolder;
+  color: rgb(165, 164, 164);
+}
+
+.sold_list{
+  padding: 25rpx 0;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+}
+.sold_list .sold_list1,.sold_list2{
+  float: left;
+}
+.sold_list .sold_list1{
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #84D945;
+  color: #fff;
+  font-size: 50rpx;
+  border-radius: 50%;
+  text-align: center;
+}
+.sold_list2{
+  color: #444;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.sold_list2_titlemain{
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+}
+.footer{
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: rgb(109, 108, 108);
+}
